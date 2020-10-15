@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: #4c6353;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    max-width: 100%;
+    font-family: 'open sans', sans-serif;
+
+}
+
+.header
+{
+    background-color: #f7f7f7f7;
+    border-bottom: 1px #f0f0f0;
+    padding: 20px 40px ;
+}
+
+.header h2{
+    margin: 0;
+}
+
+.container{
+    background-color: aliceblue;
+    width: 400px;
+    overflow: hidden;
+    max-width: 100%;
+    
+}
+
+/* FORM */
+
+.form
+{
+    padding: 30px 40px;
+}
+
+.form-control
+{
+    margin-bottom: 1px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.from-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+
+}
+
+/* input boc */
+.form-control input
+{
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+
+
+
+/* Icons */
+
+.form-control i
+{
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    visibility: hidden;
+
+
+}
+
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* Button */
+.form-control button
+{
+    background-color: #4c6353;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 1.5rem;
+}
+
+
+
+
+/* Color on input  */
+.form-control.success input
+{
+    border-color: #2ecc71;
+}
+
+.form-control.error input
+{
+    border-color: #e74c3c;
+}
+
+
+/* Shows icons */
+
+.form-control.error i.fa-exclamation-circle
+{
+    color: #e74c3c;
+    visibility: visible;
+
+}
+
+
+.form-control.form-control.success i.fa-check-circle
+{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+
+.form-control.error small
+{
+    color: #e74c3c ;
+    visibility: visible
+    ;
+
+}
