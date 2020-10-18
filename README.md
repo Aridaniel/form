@@ -4,4 +4,4 @@
 
 + Checks if you have an empty input or not, cheks is your email is right or not , checks for passowrd1 and password2 are the same or not, 
 
-* live demo here https://tskoli.form.project.jiiahes.surge.sh
+* live demo here https://formproject-tskoli-injavascript.surge.sh
