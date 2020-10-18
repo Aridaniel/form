@@ -25,8 +25,6 @@ function checkInputs(){
     const password2Value = password2.value.trim();
 
 
-    //set to local storage just for fun
-    localStorage.setItem('usernameValue', )
 
     // Make a boolean to check if all inputs boxesa are succes then alert submit form
     let isEverythingCorrect = true
