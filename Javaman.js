@@ -25,14 +25,24 @@ function checkInputs(){
     const password2Value = password2.value.trim();
 
 
+    //set to local storage just for fun
+    localStorage.setItem('usernameValue', )
+
+    // Make a boolean to check if all inputs boxesa are succes then alert submit form
+    let isEverythingCorrect = true
+
+    
+    
 
 
     //check if username input is empty or has content
     if (usernameValue === '')
     {
+        isEverythingCorrect = false
         setErrorFor(username, 'Username cannot be blank')
 
     } else {
+        
         setSucccesFor(username)
     }
 
@@ -40,12 +50,15 @@ function checkInputs(){
 
     if (emailValue === '')
     {
+        isEverythingCorrect = false
         setErrorFor(email, 'Email cannot be blank')
 
     } else if(!isEmail(emailValue)){
+        isEverythingCorrect = false
         setErrorFor(email, 'Email is not valid')
 
     }else {
+       
         setSucccesFor(email)
     }
 
@@ -57,9 +70,11 @@ function checkInputs(){
     //check for password
     if (passwordValue === '')
     {
+        isEverythingCorrect = false
         setErrorFor(password, 'Password cannot be blank')
 
     } else {
+        
         setSucccesFor(password)
     }
 
@@ -67,25 +82,32 @@ function checkInputs(){
 
     if (password2Value === '')
     {
+        isEverythingCorrect = false
         setErrorFor(password2, 'Password2 cannot be blank')
 
     } 
     // Checks if password and password2 is same or not
     else if(passwordValue !== password2Value)
     {
+        isEverythingCorrect = false
         setErrorFor(password2, 'Passwords does not match')
     }
      else {
+        
         setSucccesFor(password2)
     }
 
-   
-
+  
+//"Form submited"
+    if (isEverythingCorrect){
+        alert('Form sumbitted')
+    }
     
 }
 
 
 
+   
 
 
 //Error function

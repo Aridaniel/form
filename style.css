@@ -34,6 +34,9 @@ body{
     
 }
 
+
+
+
 /* FORM */
 
 .form
@@ -54,7 +57,10 @@ body{
 
 }
 
-/* input boc */
+
+
+
+/* input box */
 .form-control input
 {
     display: block;
@@ -88,6 +94,9 @@ body{
 }
 
 
+
+
+
 /* Button */
 .form-control button
 {
@@ -103,7 +112,7 @@ body{
 
 
 
-/* Color on input  */
+/* Color on input when succes or error  */
 .form-control.success input
 {
     border-color: #2ecc71;
@@ -115,7 +124,10 @@ body{
 }
 
 
-/* Shows icons */
+
+
+
+/* Shows icons, when success or failure */
 
 .form-control.error i.fa-exclamation-circle
 {
