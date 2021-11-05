@@ -1,4 +1,4 @@
-# Form vaidation
+# Form validation
 
 * SIGN IN: Form, where you need to sign in username, email, password
 
